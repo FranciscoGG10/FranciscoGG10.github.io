@@ -1,0 +1,266 @@
+:root{
+    --color01:#38A9FF;
+    --color02:#143D5C;
+    --color03:#2e8ad1;
+    --color04:#1d5885;
+    --color05:#2673ad;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url(../assets/Fondo-A.png);
+}
+
+#navigation {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 55px;
+}
+
+#navList {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#navList li {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    color: var(--color04);
+    background-color: var(--color01);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+    line-height: 55px;
+    text-align: center;
+}
+
+#navList li.active {
+    color: white;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+    width: 50vw;
+    height: 65vh;
+    border-radius: 10%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.position {
+    margin-left: 25%;
+    margin-top: 4%;
+}
+
+.form-container {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.form-check {
+    margin-top: 10px;
+	margin-left: -55px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+
+.bnt {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.right {
+    align-items: center;
+    line-height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.m-container{
+    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  padding: 5px;
+}
+.ajust-m{
+    width: 70%;
+}
+.ajust-rl{
+    width: 15%;
+}
+.question{
+    font-size: 32px;
+    font-style: oblique;
+}
+.p1{
+    font-size: 24px;
+}
+.p1-container-m{
+    width: 80%;
+    margin-left: 3%;
+}
+.position-right{
+    margin-top: 4.5%;
+}
+.p1-container-rl{
+    width: 10%;
+}
+/**/
+.form-check{
+margin-top: 5%;
+}
+
+.form-check-inline input,
+.form-check-inline label {
+    display: inline-block;
+    margin-bottom: 5px; /* Ajusta el margen inferior según tus preferencias */
+}
+
+/* Ajusta el tamaño del checkbox */
+.form-check-inline input[type="radio"] {
+    transform: scale(1.2); /* Ajusta el valor según tus preferencias para hacer el checkbox más grande */
+    margin-right: 5px; 
+    width: 25px;
+    height: 25px;
+}
+
+.form-check-inline input {
+    margin-left: 100px;
+    margin-top: 5%;
+}
+
+
+.form-check-inline .p5{
+margin-left: 14%;
+}
+
+.form-check-inline .p6{
+    margin-left: 120px;
+}
+
+
+
+/**/
+
+/*Efecto*/
+.modalmask {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.modalbox{
+    width: 800px;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+     
+}
+
+/*Movimientos*/
+.movedown {
+    margin: 0 auto;
+}
+.rotate {
+    margin: 10% auto;
+    -webkit-transform: scale(-5,-5);
+    transform: scale(-5,-5);
+}
+.resize {
+    margin: 10% auto;
+    width:0;
+    height:0;
+ 
+}
+.modalmask:target .movedown{       
+    margin:10% auto;
+}
+.modalmask:target .rotate{     
+    transform: rotate(360deg) scale(1,1);
+        -webkit-transform: rotate(360deg) scale(1,1);
+}
+ 
+.modalmask:target .resize{
+    width:500px;
+    height:400px;
+}
+
+/*Boton de cerrar*/
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+ 
+}
+ 
+.close:hover {
+    background: var(--color01);
+    color:#222;
+}
+
+/**/
+
+.title-modal{
+font-size: 24px;
+text-align: center;    
+margin-top: 11%;
+margin-bottom: 6%;
+}
+
+.men-modal{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.mens-modal{
+    text-align: justify;
+    margin-top: 6%;
+}
+.porcen-modal{
+    text-align: center;
+    font-size: 21px;
+    font-style: italic;
+    color: var(--color02);
+}

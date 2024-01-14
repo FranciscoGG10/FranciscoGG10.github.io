@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/test.css">
+    <title>Probabilidad</title>
+</head>
+<body>
+    <div id="navigation">
+        <ul id="navList"></ul>
+    </div>
+
+    <div id="formCarousel" class="carousel position">
+        <div class="form-container">
+            <!-- Formulario 1 -->
+            <form id="form1" class="form">
+                <!-- Campos del formulario 1 -->
+				<div class="m-container ajust-rl"></div>
+                <div class="m-container ajust-m">
+                <label for="campo1" class="question">Aproximadamente, ¿Qué cantidad de dinero percibes mensualmente para tu educación?:</label>
+					<div class="form-check form-check-inline">
+  						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
+  						<label class="form-check-label" for="inlineRadio1">$0</label>
+  						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
+  						<label class="form-check-label" for="inlineRadio2">$2,000</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">
+  						<label class="form-check-label" for="inlineRadio2">$4,000</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4">
+  						<label class="form-check-label" for="inlineRadio2">$6,000</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5">
+  						<label class="form-check-label" for="inlineRadio2">$8,000 o más</label>
+					</div>
+				</div>
+                <!-- Otros campos y botones del formulario 1 -->
+                <div class="m-container p1-container-rl position-right"><button type="button" onclick="nextForm()" class="bnt right"><img src="./assets/right.png"></button></div>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <!-- Formulario 2 -->
+            <form id="form2" class="form">
+                <!-- Campos del formulario 2 -->
+                <div class="m-container ajust-rl"><button type="button" onclick="prevForm()" class="bnt left"><img src="./assets/left.png"></button></div>
+                <div class="m-container ajust-m">
+                <label for="campo2" class="question">¿Cuántas unidades de aprendizaje has reprobado?:</label>
+					<div class="form-check form-check-inline">
+  						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="5">
+  						<label class="form-check-label" for="inlineRadio1">0-1</label>
+  						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7" value="4">
+  						<label class="form-check-label" for="inlineRadio2">2</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8" value="3">
+  						<label class="form-check-label" for="inlineRadio2">3</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9" value="2">
+  						<label class="form-check-label" for="inlineRadio2">4</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio10" value="1">
+  						<label class="form-check-label" for="inlineRadio2">5 o más</label>
+					</div>
+				</div>
+                <!-- Otros campos y botones del formulario 2 -->
+				
+                <div class="m-container ajust-rl"><button type="button" onclick="nextForm()" class="bnt right"><img src="./assets/right.png"></button></div>
+            </form>
+        </div>
+        <div class="form-container">
+            <!-- Formulario 3 -->
+            <form id="form3" class="form">
+                <!-- Campos del formulario 3 -->
+                <div class="m-container ajust-rl" ><button type="button" onclick="prevForm()" class="bnt left"><img src="./assets/left.png"></button></div>
+                
+                <div class="m-container ajust-m">
+                    <label for="campo3" class="question">¿Qué tan interesado estas en tu carrera?:</label>
+					<div class="form-check form-check-inline">
+  						<input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio11" value="1">
+  						<label class="form-check-label" for="inlineRadio1">Nada</label>
+  						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio12" value="2">
+  						<label class="form-check-label" for="inlineRadio2">Poco</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio13" value="3">
+  						<label class="form-check-label" for="inlineRadio2">Normal</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio14" value="4">
+  						<label class="form-check-label" for="inlineRadio2">Mucho</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio15" value="5">
+  						<label class="form-check-label" for="inlineRadio2">Demasiado</label>
+					</div>
+				</div>
+               <div class="m-container ajust-rl"> <button type="button" onclick="nextForm()" class="bnt right"><img src="./assets/right.png"></button></div>
+            </form>
+        </div>
+		
+		
+      
+        <div class="form-container">
+            <!-- Formulario 4 -->
+            <form id="form4" class="form">
+                <!-- Campos del formulario 4 -->
+                <div class="m-container ajust-rl"><button type="button" onclick="prevForm()" class="bnt left"><img src="./assets/left.png"></button></div>
+                <div class="m-container ajust-m" >
+                    <label for="campo4" class="question">¿Te sientes apoyado por tus familiares para acabar tu educación?:</label>
+					<div class="form-check form-check-inline">
+  						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio16" value="1">
+  						<label class="form-check-label" for="inlineRadio1">Nada</label>
+  						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio17" value="2">
+  						<label class="form-check-label" for="inlineRadio2">Poco</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio18" value="3">
+  						<label class="form-check-label" for="inlineRadio2">Normal</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio19" value="4">
+  						<label class="form-check-label" for="inlineRadio2">Mucho</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio20" value="5">
+  						<label class="form-check-label" for="inlineRadio2">Demasiado</label>
+					</div>
+				</div>
+                <div class="m-container ajust-rl"><button type="button" onclick="nextForm()" class="bnt right"><img src="./assets/right.png"></button></div>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <!-- Formulario 5 -->
+            <form id="form5" class="form">
+                <!-- Campos del formulario 5 -->
+                <div class="m-container ajust-rl" ><button type="button" onclick="prevForm()" class="bnt left"><img src="./assets/left.png"></button></div>
+                <div class="m-container ajust-m" >
+                    <label for="campo5" class="question">¿Cómo te sientes cuando tomas tus clases?:</label>
+					<div class="form-check form-check-inline">
+  						<input class="form-check-input p5" type="radio" name="inlineRadioOptions" id="inlineRadio21" value="1">
+  						<label class="form-check-label" for="inlineRadio1">Nada Interesado</label>
+  						<input class="form-check-input p5" type="radio" name="inlineRadioOptions" id="inlineRadio22" value="2">
+  						<label class="form-check-label" for="inlineRadio2">Poco Interesado</label>
+						<input class="form-check-input p5" type="radio" name="inlineRadioOptions" id="inlineRadio23" value="3">
+  						<label class="form-check-label" for="inlineRadio2">Interesado</label>
+						<input class="form-check-input p5" type="radio" name="inlineRadioOptions" id="inlineRadio24" value="4">
+  						<label class="form-check-label" for="inlineRadio2">Muy Interesado</label>
+						<input class="form-check-input p5" type="radio" name="inlineRadioOptions" id="inlineRadio25" value="5">
+  						<label class="form-check-label" for="inlineRadio2">Demasiado Interesado</label>
+					</div>
+				</div>
+                <div class="m-container ajust-rl" ><button type="button" onclick="nextForm()" class="bnt right"><img src="./assets/right.png"></button></div>
+            </form>
+        </div>
+		
+		
+		
+        <div class="form-container">
+            <!-- Último Formulario -->
+            <form id="finalForm" class="form">
+                <!-- Campos del último formulario -->
+                <div class="m-container ajust-rl" ><button type="button" onclick="prevForm()" class="bnt left"><img src="./assets/left.png"></button></div>
+                <div class="m-container ajust-m">
+                    <label for="campoFinal" class="question">¿Sientes que vas por buen camino para terminar tu carrera?:</label>
+					<div class="form-check form-check-inline">
+  						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio26" value="1">
+  						<label class="form-check-label" for="inlineRadio1">No</label>
+  						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio27" value="2">
+  						<label class="form-check-label" for="inlineRadio2">Poco</label>
+						<input class="form-check-input p6" type="radio" name="inlineRadioOptions" id="inlineRadio28" value="3">
+  						<label class="form-check-label" for="inlineRadio2">Normal</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio29" value="4">
+  						<label class="form-check-label" for="inlineRadio2">Mucho</label>
+						<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio30" value="5">
+  						<label class="form-check-label" for="inlineRadio2">Demasiado</label>
+					</div>
+				</div>
+               <div class="m-container ajust-rl"><button type="submit" id="submitFormBtn" class="bnt"><img src="./assets/send.png"></button></div>
+                        
+            </form>
+        </div>
+    </div>
+	<!--PROBABILIDAD BAJO-->
+		<div id="myModal1" class="modalmask modal">
+			<div class="modalbox resize">
+				<a href="index.html" title="Close" class="close">X</a>
+				<h2 class="title-modal">Probabilidad de terminar la universidad: Baja</h2>
+				<span class="porcen-modal"></span>
+				<p class="mens-modal">El éxito no depende de las probabilidades, sino de tu determinación y esfuerzo. A pesar 
+					de estadísticas desalentadoras, tu historia se construye con dedicación, pasión y perseverancia. 
+					Cada obstáculo es una oportunidad para crecer y demostrar tu capacidad.</p>
+				<p class="men-modal"> Con compromiso y trabajo duro, desafía las estadísticas y alcanza tus metas. ¡Puedes lograrlo!</p>
+			</div>
+		</div>
+
+	<!--PROBABILIDAD MEDIA-->
+		<div id="myModal2" class="modalmask modal">
+			<div class="modalbox resize">
+				<a href="index.html" title="Close" class="close">X</a>
+				<h2 class="title-modal">Probabilidad de terminar la universidad: Media</h2>
+				<span class="porcen-modal"></span>
+				<p class="mens-modal">Tener una probabilidad media de terminar la universidad es un sólido punto de partida. 
+					Eres capaz de elevar expectativas y superar desafíos. Las estadísticas no definen tu capacidad 
+					ni tu éxito; tienes el control. Demuestra tu compromiso y pasión.</p>
+				<p class="men-modal"> Cada paso y obstáculo te acercan a la culminación. ¡Eres capaz y tu determinación marca la diferencia!</p>
+				</div>
+		</div>
+	<!--PROBABILIDAD ALTA-->
+		<div id="myModal3" class="modalmask modal">
+			<div class="modalbox resize">
+				<a href="index.html" title="Close" class="close">X</a>
+				<h2 class="title-modal">Probabilidad de terminar la universidad: Alta</h2>
+				<span class="porcen-modal"></span>
+				<p class="mens-modal">El éxito no se limita a las probabilidades, sino a tu determinación y esfuerzo. 
+					A pesar de las estadísticas, tu historia se forja con dedicación, pasión y perseverancia. 
+					Cada obstáculo es una chance para crecer y demostrar tu capacidad.</p>
+				<p class="men-modal">Con compromiso y esfuerzo, desafía cualquier estadística. ¡Tú puedes lograrlo!</p>
+			</div>
+		</div>
+	
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/test-js.js"></script>
+</body>
+</html>
